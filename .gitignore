@@ -1,0 +1,22 @@
+﻿
+# ignore the settings folder and files for VSCode and PSS
+.vscode/*
+*.psproj
+*TempPoint*
+
+# Ignore staging info from Visual Studio
+library/FunctionAppDeploymentTools/.vs/*
+library/FunctionAppDeploymentTools/FunctionAppDeploymentTools/bin/*
+library/FunctionAppDeploymentTools/FunctionAppDeploymentTools/obj/*
+
+# ignore PowerShell Studio MetaData
+FunctionAppDeploymentTools/FunctionAppDeploymentTools.psproj
+FunctionAppDeploymentTools/FunctionAppDeploymentTools.psproj.bak
+FunctionAppDeploymentTools/FunctionAppDeploymentTools.psprojs
+FunctionAppDeploymentTools/FunctionAppDeploymentTools.psproj
+
+# ignore the TestResults
+TestResults/*
+
+# ignore the publishing Directory
+publish/*
