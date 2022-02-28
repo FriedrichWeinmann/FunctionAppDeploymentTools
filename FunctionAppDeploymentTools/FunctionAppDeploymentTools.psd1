@@ -21,7 +21,7 @@
 	Description = 'Tools to deploy and manage azure function apps'
 	
 	# Minimum version of the Windows PowerShell engine required by this module
-	PowerShellVersion = '7.2'
+	PowerShellVersion = '7.0'
 	
 	# Modules that must be imported into the global environment prior to importing
 	# this module
