@@ -1,5 +1,5 @@
-﻿New-PSFLicense -Product 'FunctionAppDeploymentTools' -Manufacturer 'frweinma' -ProductVersion $script:ModuleVersion -ProductType Module -Name MIT -Version "1.0.0.0" -Date (Get-Date "2022-02-24") -Text @"
-Copyright (c) 2022 frweinma
+﻿New-PSFLicense -Product 'FunctionAppDeploymentTools' -Manufacturer 'Friedrich Weinmann' -ProductVersion $script:ModuleVersion -ProductType Module -Name MIT -Version "1.0.0.0" -Date (Get-Date "2022-02-24") -Text @"
+Copyright (c) 2022 Friedrich Weinmann
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
