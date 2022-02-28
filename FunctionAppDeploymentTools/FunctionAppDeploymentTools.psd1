@@ -9,19 +9,19 @@
 	GUID = 'e9b2410e-7e3b-4e7c-b7e8-2752405e0381'
 	
 	# Author of this module
-	Author = 'frweinma'
+	Author = 'Friedrich Weinmann'
 	
 	# Company or vendor of this module
-	CompanyName = 'MyCompany'
+	CompanyName = 'Microsoft'
 	
 	# Copyright statement for this module
-	Copyright = 'Copyright (c) 2022 frweinma'
+	Copyright = 'Copyright (c) 2022 Friedrich Weinmann'
 	
 	# Description of the functionality provided by this module
 	Description = 'Tools to deploy and manage azure function apps'
 	
 	# Minimum version of the Windows PowerShell engine required by this module
-	PowerShellVersion = '5.0'
+	PowerShellVersion = '7.2'
 	
 	# Modules that must be imported into the global environment prior to importing
 	# this module
@@ -39,16 +39,19 @@
 	# FormatsToProcess = @('xml\FunctionAppDeploymentTools.Format.ps1xml')
 	
 	# Functions to export from this module
-	FunctionsToExport = ''
+	FunctionsToExport = @(
+		'Get-FDKeyVaultCertificate'
+		'Save-FDKeyVaultCertificate'
+	)
 	
 	# Cmdlets to export from this module
-	CmdletsToExport = ''
+	# CmdletsToExport = ''
 	
 	# Variables to export from this module
-	VariablesToExport = ''
+	# VariablesToExport = ''
 	
 	# Aliases to export from this module
-	AliasesToExport = ''
+	# AliasesToExport = ''
 	
 	# List of all modules packaged with this module
 	ModuleList = @()
