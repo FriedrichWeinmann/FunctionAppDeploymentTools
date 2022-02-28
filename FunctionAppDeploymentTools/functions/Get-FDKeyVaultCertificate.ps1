@@ -19,6 +19,12 @@
 	
 	.PARAMETER PrivateKey
 		Include the private key in the certificate retrieved.
+
+	.PARAMETER WhatIf
+		if this switch is enabled, no actions are performed but informational messages will be displayed that explain what would happen if the command were to run.
+
+	.PARAMETER Confirm
+		If this switch is enabled, you will be prompted for confirmation before executing any operations that change state.
 	
 	.EXAMPLE
 		PS C:\> Get-FDKeyVault -VaultName 'myVault' -Name 'myCert'
@@ -31,6 +37,7 @@
 		Retrieve both the public & private key of the 'myCert' certificate from vault 'myVault'
 	#>
 	[Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseDeclaredVarsMoreThanAssignments', '')]
+	[OutputType([System.Security.Cryptography.X509Certificates.X509Certificate2])]
 	[CmdletBinding(SupportsShouldProcess = $true)]
 	Param (
 		[Parameter(Mandatory = $true)]

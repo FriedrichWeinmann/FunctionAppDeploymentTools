@@ -30,6 +30,12 @@
 		The password to protect the certificate with.
 		Only applies to pfx certificates
 	
+	.PARAMETER WhatIf
+		if this switch is enabled, no actions are performed but informational messages will be displayed that explain what would happen if the command were to run.
+
+	.PARAMETER Confirm
+		If this switch is enabled, you will be prompted for confirmation before executing any operations that change state.
+
 	.EXAMPLE
 		PS C:\> Save-FDKeyVaultCertificate -VaultName myVault -Name myCert -Path .\cert.cer
 
